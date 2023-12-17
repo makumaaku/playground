@@ -60,3 +60,4 @@ flutter:
     - shaders/gradient.frag
     - shaders/stripe.frag
     - shaders/stripe_time_scale.frag
+    - shaders/warp.frag

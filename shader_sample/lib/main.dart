@@ -4,6 +4,7 @@ import 'package:shader_sample/shaders/hello_world_frame.dart';
 import 'package:shader_sample/shaders/pixelation_frame.dart';
 import 'package:shader_sample/shaders/stripe_frame.dart';
 import 'package:shader_sample/shaders/stripe_time_scale_frame.dart';
+import 'package:shader_sample/shaders/warp_frame.dart';
 
 void main() {
   runApp(const MyApp());
@@ -54,6 +55,7 @@ class _ShaderScreenState extends State<ShaderScreen> {
     const GradientFrame(),
     const StripeFrame(),
     const StripeTimeScaleFrame(),
+    const WarpFrame(),
   ];
 
   @override
