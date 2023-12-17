@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shader_sample/shaders/gradient_frame.dart';
 import 'package:shader_sample/shaders/hello_world_frame.dart';
+import 'package:shader_sample/shaders/merry_christmas.dart';
 import 'package:shader_sample/shaders/pixelation_frame.dart';
 import 'package:shader_sample/shaders/stripe_frame.dart';
 import 'package:shader_sample/shaders/stripe_time_scale_frame.dart';
@@ -51,25 +52,25 @@ class _ShaderScreenState extends State<ShaderScreen> {
   }
 
   final shaderContents = [
+    const MerryChristmasFrame(),
+    const StructureFrame(),
+    const WarpFrame(),
+    const StripeTimeScaleFrame(),
+    const StripeFrame(),
+    const GradientFrame(),
     const PixelationContents(),
     const HelloWorldFrame(),
-    const GradientFrame(),
-    const StripeFrame(),
-    const StripeTimeScaleFrame(),
-    const WarpFrame(),
-    const StructureFrame(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(backgroundColor: Colors.blue),
         body: PageView.builder(
-          controller: _pageController,
-          itemCount: shaderContents.length,
-          itemBuilder: (_, index) {
-            return shaderContents[index];
-          },
-        ));
+      controller: _pageController,
+      itemCount: shaderContents.length,
+      itemBuilder: (_, index) {
+        return shaderContents[index];
+      },
+    ));
   }
 }

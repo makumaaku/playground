@@ -62,3 +62,4 @@ flutter:
     - shaders/stripe_time_scale.frag
     - shaders/warp.frag
     - shaders/structure.frag
+    - shaders/merry_christmas.frag
