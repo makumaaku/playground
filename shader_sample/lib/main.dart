@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:shader_sample/pixelation_contents.dart';
+import 'package:shader_sample/shaders/hello_world_contents.dart';
+import 'package:shader_sample/shaders/pixelation_contents.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,14 +45,20 @@ class _ShaderScreenState extends State<ShaderScreen> {
     super.dispose();
   }
 
+  final shaderContents = [
+    const PixelationContents(),
+    const HelloWorldContents()
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(backgroundColor: Colors.blue),
         body: PageView.builder(
           controller: _pageController,
+          itemCount: shaderContents.length,
           itemBuilder: (_, index) {
-            return const PixelationContents();
+            return shaderContents[index];
           },
         ));
   }
