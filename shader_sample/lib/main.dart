@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shader_sample/shaders/gradient_contents.dart';
 import 'package:shader_sample/shaders/hello_world_contents.dart';
 import 'package:shader_sample/shaders/pixelation_contents.dart';
 
@@ -47,7 +48,8 @@ class _ShaderScreenState extends State<ShaderScreen> {
 
   final shaderContents = [
     const PixelationContents(),
-    const HelloWorldContents()
+    const HelloWorldContents(),
+    const GradientContents(),
   ];
 
   @override

@@ -57,3 +57,4 @@ flutter:
   shaders:
     - shaders/pixelation.frag
     - shaders/helloworld.frag
+    - shaders/gradient.frag
