@@ -1,3 +1,5 @@
+// 参考: https://www.thedroidsonroids.com/blog/fragment-shaders-in-flutter-app-development-2
+// ここでは実装していないが色を混ぜ合わせるmix()関数なども紹介されている
 #version 460 core
 #include <flutter/runtime_effect.glsl>
 

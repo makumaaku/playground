@@ -59,3 +59,4 @@ flutter:
     - shaders/helloworld.frag
     - shaders/gradient.frag
     - shaders/stripe.frag
+    - shaders/stripe_time_scale.frag
