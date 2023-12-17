@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shader_sample/shaders/gradient_contents.dart';
-import 'package:shader_sample/shaders/hello_world_contents.dart';
-import 'package:shader_sample/shaders/pixelation_contents.dart';
+import 'package:shader_sample/shaders/gradient_frame.dart';
+import 'package:shader_sample/shaders/hello_world_frame.dart';
+import 'package:shader_sample/shaders/pixelation_frame.dart';
+import 'package:shader_sample/shaders/stripe_frame.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,8 +49,9 @@ class _ShaderScreenState extends State<ShaderScreen> {
 
   final shaderContents = [
     const PixelationContents(),
-    const HelloWorldContents(),
-    const GradientContents(),
+    const HelloWorldFrame(),
+    const GradientFrame(),
+    const StripeFrame(),
   ];
 
   @override

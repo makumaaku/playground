@@ -58,3 +58,4 @@ flutter:
     - shaders/pixelation.frag
     - shaders/helloworld.frag
     - shaders/gradient.frag
+    - shaders/stripe.frag

@@ -1,22 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shaders/flutter_shaders.dart';
 
-class GradientContents extends StatelessWidget {
-  const GradientContents({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const GradientFrame();
-  }
-}
-
-final class GradientFrame extends StatelessWidget {
-  const GradientFrame({super.key});
+final class StripeFrame extends StatelessWidget {
+  const StripeFrame({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ShaderBuilder(
-      assetKey: 'shaders/gradient.frag',
+      assetKey: 'shaders/stripe.frag',
       (_, shader, __) => AnimatedSampler(
         (_, size, canvas) {
           // 変数の受け渡し。
